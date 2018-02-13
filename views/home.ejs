@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1'>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="/js/drawing.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Notes Lecture</title>
+</head>
+<body>
+<div class="fluid">
+    <div class="title"><h1>Notes Lecture</h1></div>
+    <div class="col-md-6">
+        <div class="well video-space" id="video-space">
+            <button class="btn btn-default" id="done_notes">Done</button>
+            <textarea id="notes_textarea">
+
+            </textarea>
+        </div>
+    </div>
+    <div class="col-md-6" id="canvas-parent">
+        <button class="btn btn-default" id="clear_button">Clear</button>
+        <a class="btn btn-default" id="download_image">Download Image</a><br/><br/>
+        <div class="well drawing-space" id="drawing-space">
+            <canvas id="drawing"></canvas>
+        </div>
+    </div>
+</div>
+<script src="/js/notes.js"></script>
+</body>
+</html>
